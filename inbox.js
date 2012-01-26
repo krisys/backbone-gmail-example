@@ -66,7 +66,8 @@ $(function(){
             if (word=="") return this;
 
             var pat = new RegExp(word, 'gi');
-            return _(this.filter(function(mail) { return pat.test(mail.get('subject')) || pat.test(mail.get('sender')); }));
+            return _(this.filter(function(mail) { 
+                return pat.test(mail.get('subject')) || pat.test(mail.get('sender')); }));
         },
         comparator: function(mail){
             return -mail.get('timestamp');
