@@ -1,72 +1,72 @@
-      body{
-        font-size:12px;
-        font-family: Verdana;
-      }
-      #mail-list{
-        list-style:none;
-        padding:5px;
-      }
-      .sender{
-        width:150px;
-      }
-      .mail{
-        background-color:#fcfcfc;
-        border-top:1px solid #efefef;
-        border-left:1px solid #efefef;
-        border-right:1px solid #efefef;
-        padding:5px;
-      }
-      .mail span{
-        vertical-align:middle;
-      }
-      .mail:last-child{
-        border-bottom:1px solid #efefef;
-      }
-      a{
-        text-decoration:none;
-        color:#4183C4;
-      }
-      .icon{
-        background-repeat: no-repeat;
-        padding-left:4px;
-        padding-bottom:5px;
-      }
-      .bookmark{
-        background-image: url('icons/star.png');
-      }
+body{
+  font-size:12px;
+  font-family: Verdana;
+}
+#mail-list{
+  list-style:none;
+  padding:5px;
+}
+.sender{
+  width:150px;
+}
+.mail{
+  background-color:#fcfcfc;
+  border-top:1px solid #efefef;
+  border-left:1px solid #efefef;
+  border-right:1px solid #efefef;
+  padding:5px;
+}
+.mail span{
+  vertical-align:middle;
+}
+.mail:last-child{
+  border-bottom:1px solid #efefef;
+}
+a{
+  text-decoration:none;
+  color:#4183C4;
+}
+.icon{
+  background-repeat: no-repeat;
+  padding-left:4px;
+  padding-bottom:5px;
+}
+.bookmark{
+  background-image: url('icons/star.png');
+}
 
-      .nobookmark{
-        background-image: url('icons/nostar.png');
-      }
+.nobookmark{
+  background-image: url('icons/nostar.png');
+}
 
-      .labels{
-        border:1px solid white;
-        padding:2px;
-        margin:0px 9px 0px 9px;
-        background-color:green;
-        color:white;
-        font-size:11px;
-        font-weight:normal;
-        text-align:center;
-      }
-      #summary{
-        padding:20px 10px 0px 10px;
-      }
-      #sidemenu{
-          margin:0px;
-          list-style:none;
-          padding:0px;
-      }
-      #sidemenu li{
-          padding:3px;
-      }
+.labels{
+  border:1px solid white;
+  padding:2px;
+  margin:0px 9px 0px 9px;
+  background-color:green;
+  color:white;
+  font-size:11px;
+  font-weight:normal;
+  text-align:center;
+}
+#summary{
+  padding:20px 10px 0px 10px;
+}
+#sidemenu{
+    margin:0px;
+    list-style:none;
+    padding:0px;
+}
+#sidemenu li{
+    padding:3px;
+}
 
-      select, button{
-          border:1px solid #ddd;
-          background-color:#fafafa;
-          padding:3px;
-      }
-      input{
-          border:1px solid #ddd;
-          padding:3px;
-      }
+select, button{
+    border:1px solid #ddd;
+    background-color:#fafafa;
+    padding:3px;
+}
+input{
+    border:1px solid #ddd;
+    padding:3px;
+}
