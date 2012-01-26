@@ -62,9 +62,9 @@ a{
 }
 
 select, button{
-    border:1px solid #ddd;
-    background-color:#fafafa;
-    padding:3px;
+  border:1px solid #ddd;
+  background-color:#fafafa;
+  padding:3px;
 }
 input{
   border:1px solid #ddd;
