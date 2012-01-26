@@ -53,12 +53,12 @@ a{
   padding:20px 10px 0px 10px;
 }
 #sidemenu{
-    margin:0px;
-    list-style:none;
-    padding:0px;
+  margin:0px;
+  list-style:none;
+  padding:0px;
 }
 #sidemenu li{
-    padding:3px;
+  padding:3px;
 }
 
 select, button{
@@ -67,6 +67,6 @@ select, button{
     padding:3px;
 }
 input{
-    border:1px solid #ddd;
-    padding:3px;
+  border:1px solid #ddd;
+  padding:3px;
 }
