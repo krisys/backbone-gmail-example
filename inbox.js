@@ -121,8 +121,6 @@ $(function(){
         initialize: function(){
 
             this.collection.bind('change', this.renderSideMenu, this);
-            //this.collection.bind('all', this.render, this);
-            //this.collection.bind('reset', this.render, this);
             this.render(this.collection);
             this.renderSideMenu();
         },
