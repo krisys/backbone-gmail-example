@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <script src="libs/json2.js"></script> 
+    <script src="libs/jquery-1.5.js"></script> 
+    <script src="libs/underscore-1.1.6.js"></script> 
+    <script src="libs/backbone.js"></script> 
+    <script src="libs/backbone.localStorage.js"></script> 
+    <script src="data.js"></script> 
+    <script src="inbox.js"></script> 
+  </head>
+  <body>
+    <!-- Inbox App Interface --> 
+
+    <div id="mailapp"> 
+      <h1>MailBox</h1> 
+        <span style="margin-left:124px;">
+        <select id="labeler">
+          <option value=""> Apply Label </option>
+          <option value="jQuery"> jQuery </option>
+          <option value="Javascript"> Javascript </option>
+          <option value="Backbone.js"> Backbone.js </option>
+        </select> 
+      </span>
+      <span> <button id="markallread">Mark all as Read</button></span>
+      <span> <button id="archive">Archive</button></span>
+      <span> <input type="text" id="search" placeholder="Type to filter"/> </span>
+      <div class="content"> 
+        <div id="summary" style="float:left;width:100px;">
+            <ul id="sidemenu">
+            </ul>
+        </div>
+        <div id="mails" style="float:left;"> 
+            <ul id="mail-list"></ul> 
+        </div> 
+      </div> 
+
+    </div> 
+    <!-- Templates --> 
+    <script type="text/template" id="summary-tmpl">
+    <li>
+       <a href="#" id="inbox">
+         <% if (inbox > 0 ) { %> <strong> Inbox (<%= inbox %>) </strong> <% } else { %> Inbox <% } %>
+       </a>
+    </li>
+    <li>
+       <a href="#" id="starred">
+         <% if (starred > 0 ) { %> <strong> Starred (<%= starred %>) </strong> <% } else { %> Starred <% } %>
+       </a>
+    </li>
+    <li><a href="#" id="allmail">All Mail</a></li>
+    </script>
+
+    <script type="text/template" id="mail-item"> 
+      <div>
+        <div class="mail">
+          <a href="#">
+            <% if (read == false) { %> <strong>  <% } %>
+            <span style="float:left;width:20px;"><input class="check" type="checkbox" <%= selected? "checked='checked'":"" %> / > </span>
+            <span style="float:left;width:20px;" <% if( star == true ) { %> class="star icon bookmark" <% } else { %> class="star icon nobookmark" <% } %> > &nbsp; </span>
+            <span style="float:left;width:130px;" class="sender"><%= sender %></span>
+            <span style="float:left;width:350px;" class="mail-subject"><%= subject %></span>
+            <span style="float:left;width:100px;text-align:right;" class="timestamp"> <%= timestamp.getDate() + "-" + timestamp.getMonth() + "-" + timestamp.getFullYear() %></span>
+            <% if (label != '') { %> 
+              <span style="float:left;width:80px;" class="labels"> <%= label %></span> 
+            <% } %>
+            <div style="clear:both;"></div>
+            <% if (read == false) { %> </strong>  <% } %>
+          </a>
+        </div>
+      </div>
+    </script>
+  </body>
+</html>
